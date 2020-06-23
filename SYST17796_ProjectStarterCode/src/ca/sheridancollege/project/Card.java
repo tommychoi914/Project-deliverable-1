@@ -13,6 +13,15 @@ package ca.sheridancollege.project;
  */
 public abstract class Card {
     //default modifier for child classes
+    private Number number;
+    private Suit suit;
+    
+    public enum Number{ace,two,three,four,five,six,seven,eight,nine,ten,jack,queen,king;
+    } 
+    public enum Suit{spades,hearts,diamonds,clubs;
+    }
+            
+    
 
     /**
      * Students should implement this method for their specific children classes
@@ -20,6 +29,20 @@ public abstract class Card {
      * @return a String representation of a card. Could be an UNO card, a regular playing card etc.
      */
     @Override
-    public abstract String toString();
+    public String toString(){
+        return String.format(number+""+suit);
+    }
+    public Number getNumber(){
+        return this.number;
+    }
+    public void setNumber(Number number){
+        this.number=number;
+    }
+    public Suit getSuit() {
+        return this.suit;
+    }
+    public void setSuit(Suit suit) {
+        this.suit = suit;
 
+    }
 }
