@@ -2,6 +2,8 @@
  * SYST 17796 Project Base code.
  * Students can modify and extend to implement their game.
  * Add your name as an author and the date!
+ *@author Yoonho Choi 6/23/2020
+ *@author Hoora Tavana 6/23/2020
  */
 package ca.sheridancollege.project;
 
